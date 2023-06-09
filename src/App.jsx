@@ -90,7 +90,7 @@ export default function Game() {
 
     let coord;
     if(historyMove[moveIndex - 1] != null) {
-      let x = Math.floor(historyMove[moveIndex -1] / 3) + 1;
+      let x = 3 - Math.floor(historyMove[moveIndex-1] / 3);
       let y = historyMove[moveIndex-1] % 3 + 1;
       coord = " (" + y + "," + x + ")";
     }
