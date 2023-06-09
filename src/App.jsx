@@ -89,9 +89,9 @@ export default function Game() {
     }
 
     let coord;
-    if(historyMove[moveIndex] != null) {
-      let x = Math.floor(historyMove[moveIndex] / 3) + 1;
-      let y = historyMove[moveIndex] % 3 + 1;
+    if(historyMove[moveIndex - 1] != null) {
+      let x = Math.floor(historyMove[moveIndex -1] / 3) + 1;
+      let y = historyMove[moveIndex-1] % 3 + 1;
       coord = " (" + y + "," + x + ")";
     }
 
